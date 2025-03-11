@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>ACMo: Attribute Controllable Motion Generation</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <style>
+    /* 确保页脚在整个页面底部 */
+    .footer {
+        margin-top: auto;
+    }
+
+    /* 确保页脚内容水平居中 */
+    .footer .content {
+        text-align: center;
+    }
+  </style>
+
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">ACMo: Attribute Controllable Motion Generation</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://mjwei3d.github.io/" target="_blank">Mingjie Wei</a>,</span>
+                <span class="author-block">
+                  <a href="https://web.xidian.edu.cn/xmxie/" target="_blank">Xuemei Xie</a>,</span>
+                  <span class="author-block">
+                    <a href="https://web.xidian.edu.cn/gmshi/" target="_blank">Guangming Shi</a>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Xidian University<br>arXiv 2025</span>
+                  </div>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/MingjieWe/ACMo" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming)</span>
+                </a>
+              </span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        <strong><u>A</u></strong>ttribute <strong><u>C</u></strong>ontrollable <strong><u>Mo</u></strong>tion achieve an controllable stylized text-to-motion generation architecture.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Attributes such as style, fine-grained text, and trajectory are specific conditions for describing motion.  However, existing methods often lack precise user control over motion attributes and suffer from limited generalizability to unseen motions. This work introduces an Attribute Controllable Motion generation architecture, to address these challenges via decouple any conditions and control them separately.
+            Firstly, we explored the Attribute Diffusion Model to imporve text-to-motion performance via decouple text and motion learning, as the controllable model relies heavily on the pre-trained model.
+            Then, we introduce Motion Adpater to quickly finetune previously unseen motion patterns. Its motion prompts inputs achieve multimodal text-to-motion generation that captures user-specified styles. 
+            Finally, we propose a LLM Planner to bridge the gap between unseen attributes and dataset-specific texts via local knowledage for user-friendly interaction. 
+            Our approach introduces the capability for motion prompts for stylize generation, enabling fine-grained and user-friendly attribute control while providing performance comparable to state-of-the-art methods.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/teaser.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          ACMo handles motions beyond dataset representation, using motion prompts for stylize multimodal generation and multi-attribute control, with LLM Planner mapping zero-shot unseen attributes to dataset texts. Employ rapid fine-tuning to enable the model to recognize new motion patterns. The bracketed text enhances the stability of style and trajectory. Control your motions as you wish!
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/Method.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          The <strong> ACMo </strong> network architecture. Stage 1: <strong> Attribute Diffusion Model </strong>  is trained by decoupling text and motion in a more powerful latent space. Stage 2: <strong> Motion Adapter </strong>  finetunes new motion patterns and preserves the original knowledge. Stage 3: Trajectory control through Controlnet. Finally, the LLM Planner module inferences for text processing.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/ADM.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Visualization Text-to-Motion Comparison between the different methods given two distinct text descriptions from HumanML3D testset.  <strong>Bold</strong> and <em>italic</em> denote the verb and attribute, respectively. This visualizes <span style="color: darkred;">subtle differences</span> at the word level, which illustrates the advantages of our approach.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/llmplanner.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Visualization LLM Planner example. <strong style="color: darkred;">Bold</strong> and <em style="color: blue;">italics</em> represent key verb and the transformation of the inference context, respectively. The model struggles with understanding context and gets disturbed (e.g., 'retrieve' as a goal not a generated action) without LLM planner. The LLM understands user instructions and leverages world and local knowledge to convert into dataset text (e.g., 'through a ditch' -> 'forward' and 'retrieve a lost phone' -> 'carefully'), enabling effective diffusion model generation.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/adapter.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Visual ablation experiment of motion prompt and trajectory. The proposed Motion Adapter facilitates stylized generation by motion prompts to specific semantics, as shown on the left. On the right is a visualization example of multiple attributes without enhanced text desciption, we finetune then add a motion prompt, and subsequently add a track. More visualizations in supplemental material.
+        </h2>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            Sourced from <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">template</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>

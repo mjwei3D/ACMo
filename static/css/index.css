@@ -133,5 +133,13 @@ body {
   font-size: smaller;
 }
 
-
+.custom-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 自定义CSS */
+.define-is-max-desktop {
+    max-width: 1300px; /* 使用 !important 确保优先级 */
+  }
 

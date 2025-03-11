@@ -149,27 +149,68 @@
   </div>
 </section>
 <!-- End paper abstract -->
+ 
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Introduction. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Introduction</h2>
+        <div class="content has-text-justified">
+          <p>
+            ACMo handles motions beyond dataset representation, using motion prompts for stylize multimodal generation and multi-attribute control, with LLM Planner mapping zero-shot unseen attributes to dataset texts. Employ rapid fine-tuning to enable the model to recognize new motion patterns. The bracketed text enhances the stability of style and trajectory. Control your motions as you wish!
+          </p>
+          <img class='links-cover' src='static/images/teaser.png', width="100%", class="center">
+          <p>
+            <strong>Main contributions:</strong> 
+          </p>
+          <p>
+            1) To the best of our knowledge, this is the first work to propose decoupling any condition and separately implementing multi-attribute text-to-motion generation. 
+          </p>
+          <p>
+            2) The Motion Adapter is a lightweight, efficient fine-tuning method for multimodal motion generation, which achieves fine-tuning state-of-the-art on 100STYLE. 
+          </p>
+          <p>
+            3) We leveraged LLMs to enable user-friendly text-to-motion generation, capable of handling previously unseen text inputs. 
+          </p>
+            4) The Attribute Diffusion Model achieves performance on par with the state-of-the-art latent diffusion model on HumanML3D.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Introduction. -->
+</section>
 
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Method. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <p>
+            The <strong> ACMo </strong> network architecture. 
+            Stage 1: <strong> Attribute Diffusion Model </strong>  is trained by decoupling text and motion in a more powerful latent space.
+            Stage 2: <strong> Motion Adapter </strong>  finetunes new motion patterns and preserves the original knowledge. Stage 3: Trajectory control through Controlnet.
+            Finally, the LLM Planner module inferences for text processing.
+        </h2>
+          </p>
+          <img class='links-cover' src='static/images/Method.png', width="100%", class="center">
+        </div>
+      </div>
+    </div>
+    <!--/ Method. -->
+</section>
 
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
+    <div class="container custom-center">
+      <h2 class="title is-3">Result</h2>
+    </div>
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/teaser.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          ACMo handles motions beyond dataset representation, using motion prompts for stylize multimodal generation and multi-attribute control, with LLM Planner mapping zero-shot unseen attributes to dataset texts. Employ rapid fine-tuning to enable the model to recognize new motion patterns. The bracketed text enhances the stability of style and trajectory. Control your motions as you wish!
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/Method.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          The <strong> ACMo </strong> network architecture. Stage 1: <strong> Attribute Diffusion Model </strong>  is trained by decoupling text and motion in a more powerful latent space. Stage 2: <strong> Motion Adapter </strong>  finetunes new motion patterns and preserves the original knowledge. Stage 3: Trajectory control through Controlnet. Finally, the LLM Planner module inferences for text processing.
-        </h2>
-      </div>
       <div class="item">
         <!-- Your image here -->
         <img src="static/images/ADM.png" alt="MY ALT TEXT"/>

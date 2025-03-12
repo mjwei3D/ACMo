@@ -140,6 +140,6 @@ body {
 }
 /* 自定义CSS */
 .define-is-max-desktop {
-    max-width: 1300px; /* 使用 !important 确保优先级 */
+    max-width: 1350px; /* 使用 !important 确保优先级 */
   }
 
